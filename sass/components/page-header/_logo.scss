@@ -1,0 +1,42 @@
+.logo {
+    display: flex;
+    align-items: center;
+
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    
+    color: $accent-color;
+
+    @media screen and (min-width: 1140px) {
+        margin-top: 24px;
+        margin-bottom: 25px;
+
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+    }
+}
+
+.logo__accent {
+
+
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: $title-text-color;
+    @media screen and (min-width: 1140px) {
+        margin-top: 24px;
+        margin-bottom: 25px
+    }
+
+}

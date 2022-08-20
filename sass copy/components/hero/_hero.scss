@@ -1,0 +1,56 @@
+.main-div {
+    margin: 0 auto;
+}
+
+.hero {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-color: #2F303A;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: $hero__button;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.hero__button {
+    padding: 10px 32px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    background-color: $accent-color;
+    color: $hero__button;
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 250ms $cubic-bezier, color 250ms $cubic-bezier;
+
+    &:hover,
+    &:focus {
+        font-family: 'Roboto';
+        font-style: normal;
+        background-color: $hero__button;
+        color: $accent-color;
+        font-size: 16px;
+        border-radius: 4px;
+    }
+
+}

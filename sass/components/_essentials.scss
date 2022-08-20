@@ -1,0 +1,68 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+
+    &::before {
+        box-sizing: inherit;
+    }
+
+    &::after {
+        box-sizing: inherit;
+    }
+}
+
+.style {
+    font-family: 'Roboto';
+}
+
+.all-body {
+    padding-top: 60px;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    background-color: $hero__button;
+
+    @media screen and (min-width: 1140px) {
+        padding-top: 80px;
+    }
+
+}
+.container {
+    width: 480px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+p,
+ul {
+    margin: 0px;
+    padding-left: 0px;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,46 @@
+.footer-box {
+    display: block;
+    justify-content: center;
+    margin-left: 7%;
+
+}
+
+.footer-box__title {
+
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer-list {
+    @extend %list;
+    display: flex;
+    gap: 10px;
+}
+
+
+.footer-list__link {
+    @include centeredFlex();
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    color: $hero__button;
+    transition: background-color 250ms $cubic-bezier,
+        color 250ms $cubic-bezier;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $hero__button;
+    }
+}
+
+.footer-list__icon {
+    fill: currentColor;
+}

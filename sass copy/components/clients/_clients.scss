@@ -1,0 +1,58 @@
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients__title {
+    margin-bottom: 50px;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.clients-list {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.clients-list__element {
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.clients-list__element {
+    outline: none;
+    border-radius: 4px;
+}
+
+.clients-list__link {
+    @include centeredFlex();
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: $icon-normal;
+    background-color: $hero__button;
+    transition: background-color 250ms $cubic-bezier,
+        border 250ms $cubic-bezier, color 250ms $cubic-bezier;
+
+    &:hover,
+    &:focus {
+        background-color: $hero__button;
+        @include bordered();
+        color: $accent-color;
+    }
+}
+
+.clients-list__icon {
+    fill: currentColor;
+}

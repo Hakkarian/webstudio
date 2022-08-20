@@ -1,0 +1,60 @@
+.features {
+    margin-top: 0px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    background-color: $hero__button;
+
+
+
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    position: relative;
+}
+
+.features-list__element {
+    width: 270px;
+}
+
+.features-list__features-box {
+    @include centeredFlex();
+    height: 120px;
+    margin-bottom: 30px;
+
+    background-color: $portfolio-button;
+
+    border-radius: 4px;
+
+}
+
+.features-list__element:last-child {
+
+    .features & {
+        margin-right: 0;
+    }
+}
+
+.title-box__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+
+
+}
+
+.title-box__p {
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $portfolio-project-list__p;
+
+}

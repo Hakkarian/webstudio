@@ -1,0 +1,30 @@
+.networks-list {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.networks-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $hero__button;
+    color: $icon-normal;
+    transition: background-color 250ms $cubic-bezier, color 250ms $cubic-bezier;
+
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $hero__button;
+    }
+}
+
+.networks-list__icon {
+    fill: currentColor;
+}

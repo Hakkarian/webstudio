@@ -1,0 +1,26 @@
+.page-nav {
+
+
+    @media screen and (min-width: 1140px) {
+    @include centeredFlex(space-between);
+}
+}
+.page__list {
+
+    display: none;
+    @media screen and (min-width: 1140px) {
+    display: flex;
+    margin-left: 93px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: $title-text-color;
+    text-decoration: none;
+    list-style: none;
+
+    .page__element+.page__element {
+        margin-left: 50px;
+    }
+}
+}
+

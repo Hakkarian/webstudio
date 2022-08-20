@@ -1,0 +1,78 @@
+.backdrop {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms $cubic-bezier, visibility 250ms $cubic-bezier;
+    perspective: 300px;
+}
+
+.is-hidden {
+    opacity: 0;
+    backface-visibility: hidden;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0) rotate(360deg);
+}
+
+.modal {
+    position: absolute;
+    width: 528px;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    transform: translate(-50%, -50%) scale(1) rotate(0);
+    min-height: 581px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    overflow: auto;
+    transition: transform 250ms $cubic-bezier;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+}
+
+.modal__close-button {
+    position: absolute;
+    @include centeredFlex();
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    transition: background-color 250ms $cubic-bezier, color 250ms $cubic-bezier;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: $hero__button;
+        color: $accent-color;
+    }
+
+}
+
+.modal__close-icon {
+    fill: currentColor;
+}
+
+
+.modal__form-title {
+
+
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}

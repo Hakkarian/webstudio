@@ -1,0 +1,25 @@
+@mixin bordered() {
+    border: 1px solid $accent-color;
+}
+@mixin centeredFlex($type: center) {
+    display: flex;
+    align-items: center;
+    justify-content: $type;
+}
+/*EACH
+
+$icons: 'facebook', 'instagram', 'linkedin', 'twitter';
+
+@each $iconName in $icons {
+    .icon-#{$iconName} {
+        background-image: url("../images/#{$iconName}.svg");
+    }
+}
+
+@mixin generateIcons($iconList) {
+    @each $iconName in $iconList {
+    .icon-#{$iconName} {
+        background-image: url("../images/#{$iconName}.svg");
+        }
+    }
+}

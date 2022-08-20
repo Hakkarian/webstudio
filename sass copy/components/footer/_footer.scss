@@ -1,0 +1,17 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: #2F303A;
+    ;
+    color: $hero__button;
+}
+
+.footer-claster {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-claster__info {
+    display: block
+}

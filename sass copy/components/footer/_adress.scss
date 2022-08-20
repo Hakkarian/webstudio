@@ -1,0 +1,62 @@
+.adress {
+    display: block;
+    padding-left: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+
+
+}
+
+.adress__list {
+    list-style: none
+}
+
+.adress__location {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $hero__button;
+    text-decoration: none;
+    margin-bottom: 9px;
+
+}
+
+.adress__email {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $primary-text-color;
+    text-decoration: none;
+    font-style: normal;
+    margin-bottom: 9px;
+    transition: color 250ms $cubic-bezier;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        text-decoration: none;
+        font-style: normal;
+    }
+}
+
+.adress__phone {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $primary-text-color;
+    text-decoration: none;
+    font-style: normal;
+    margin-bottom: 9px;
+    transition: color 250ms $cubic-bezier;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        text-decoration: none;
+        font-style: normal;
+    }
+}

@@ -1,0 +1,72 @@
+.command {
+    background-color: $portfolio-button;
+    color: $section__title;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+
+.command-list {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+
+}
+
+
+.command-list__link {
+    color: $section__title;
+    text-decoration: none;
+}
+
+.command-list__frame {
+    background-color: $hero__button;
+    display: inline-block;
+    box-sizing: content-box;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.command-list__frame-box {
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 16px;
+
+}
+
+.command__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: $section__title;
+    margin-bottom: 50px;
+
+}
+
+.command-list__frame-worker {
+    font-weight: inherit;
+    font-size: 16px;
+    line-height: 1.18;
+    text-decoration: none;
+    margin-bottom: 10px;
+
+}
+
+.command-list__frame-p {
+    margin-bottom: 16px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $portfolio-project-list__p;
+
+
+    text-decoration: none;
+}
