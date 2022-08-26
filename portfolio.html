@@ -20,36 +20,81 @@
 <body class="all-body">
     <!--The head of the page-->
     <header class="page-header">
-        <div class="container page-nav">
-            <nav class="page-nav">
-                <a href="/" class="logo">
-                    Web<span class="logo__accent">Studio</span>
-                </a>
-    
-                <ul class="page__list">
-                    <li class="page__element"><a class="page__link" href="./index.html">Studio</a></li>
-                    <li class="page__element"><a class="page__link current" href="./portfolio.html">Portfolio</a></li>
-                    <li class="page__element"><a class="page__link" href="/">Contacts</a></li>
-                </ul>
-    
-            </nav>
-            <ul class="contacts">
-                <li class="contacts__element">
-                    <a class="contacts__email" href="info@devstudio.com">
-                        <svg class="contacts__email-icon" width="16" height="12">
-                            <use href="./images/icons.svg#envelope-normal"></use>
-                        </svg> info@devstudio.com</a>
-                </li>
-                <li class="contacts__element"><a class="contacts__phone" href="380961111111">
-                        <svg class="contacts__email-icon" width="10" height="16">
-                            <use class="contacts__phone-icon" href="./images/icons.svg#vector"></use>
-                        </svg> 38 096 111 11 11</a>
-                </li>
-    
-            </ul>
+        <div class="container page-nav">  
+                <nav class="page-nav">
+                    <a href="/" class="logo">
+                        Web<span class="logo__accent">Studio</span>
+                    </a>  
+                    <ul class="page__list">
+                        <li class="page__element"><a class="page__link" href="./index.html">Studio</a></li>
+                        <li class="page__element"><a class="page__link current" href="./portfolio.html">Portfolio</a></li>
+                        <li class="page__element"><a class="page__link" href="/">Contacts</a></li>
+                    </ul>
+                </nav>
+                    <ul class="contacts">
+                        <li class="contacts__element">
+                            <a class="contacts__email" href="mailto:info@devstudio.com">
+                                <svg class="contacts__email-icon" width="16" height="12">
+                                    <use href="./images/icons.svg#envelope-normal"></use>
+                                </svg> info@devstudio.com</a>
+                        </li>
+                        <li class="contacts__element">
+                            <a class="contacts__phone" href="tel:380961111111"> 
+                            <svg class="contacts__email-icon" width="10" height="16">
+                                <use class="contacts__phone-icon" href="./images/icons.svg#vector"></use>
+                            </svg> 38 096 111 11 11</a>
+                        </li>
+                    </ul>
+            <button type="button" class="menu-open">
+                <svg class="nav-menu__icon" width="40" height="40" aria-label="mobile menu switcher">
+                    <use class="icon-menu" href="./images/icons.svg#nav-menu"></use>
+                </svg>
+            </button>
         </div>
-    
-    
+        <div class="nav-menu is-hidden">
+            <div class="container">
+                <div class="nav-menu__top">
+                <button type="button" class="menu-close">    
+                <svg class="nav-menu__icon" width="40" height="40" aria-label="mobile menu switcher">
+                    <use class="icon-cross" href="./images/icons.svg#nav-close"></use>
+                </svg>
+                </button>
+                <nav class="menu__page-nav">
+                    <ul class="nav-menu-list">
+                        <li class="nav-menu-element"><a class="nav-menu__link" href="./index.html">Studio</a></li>
+                        <li class="nav-menu-element"><a class="nav-menu__link mob-current" href="./portfolio.html">Portfolio</a></li>
+                        <li class="nav-menu-element"><a class="nav-menu__link" href="/">Contacts</a></li>
+                    </ul>
+                </nav>
+                </div>
+                <div class="nav-menu__bottom">
+                    <ul class="bottom-contacts">
+                        <li class="bottom-contacts__element">
+                            <a class="bottom-contacts__phone" href="tel:380961111111"> 
+                            <svg class="bottom-contacts__email-icon" width="10" height="16">
+                                <use class="bottom-contacts__phone-icon" href="./images/icons.svg#vector"></use>
+                            </svg> 38 096 111 11 11</a>
+                        </li>
+                        <li class="bottom-contacts__element">
+                            <a class="bottom-contacts__email" href="mailto:info@devstudio.com">
+                                <svg class="bottom-contacts__email-icon" width="16" height="12">
+                                    <use href="./images/icons.svg#envelope-normal"></use>
+                                </svg> info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="menu-networks-list">
+                        <li class="menu-networks-element">
+                            <a class="menu-networks-link" href="/">Instagram</a></li>
+                        <li class="menu-networks-element">
+                            <a class="menu-networks-link" href="/">Twitter</a></li>
+                        <li class="menu-networks-element">
+                            <a class="menu-networks-link" href="/">Facebook</a></li>
+                        <li class="menu-networks-element">
+                            <a class="menu-networks-link" href="/">Linkedin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
 
         <main>
@@ -71,7 +116,21 @@
                                 
                                     <a class="project-list__info link" href="/">
                                         <div class="project-list__thumb">
-                                            <img src="./images/techno-min.jpg" alt="human" width="370">                                
+                                            <picture>
+                                                <source srcset="./images/port1-1x.jpg  1x, 
+                                                ./images/port1-2x.jpg 2x" 
+                                                media="(min-width: 1200px)"
+                                                />
+                                                <source srcset="./images/tabport1-1x.jpg  1x, 
+                                                ./images/tabport1-2x.jpg 2x" 
+                                                media="(min-width: 768px)"
+                                                />
+                                                <source srcset="./images/mobport1-1x.jpg  1x, 
+                                                ./images/mobport1-2x.jpg 2x" 
+                                                media="(max-width: 767px)"
+                                                />
+                                                <img src="./images/mobport1-1x.jpg" alt="technoduck">  
+                                            </picture>                              
                                                     <p class="project-list__thumb-caption">Technoduck is a state-of-the-art <br> coronavirus 
                                                         distribution platform. <br>
                                                         Companies use this platform for <br> digital espionage
@@ -91,7 +150,21 @@
                         <li class="project-list__element link">
                                     <a class="project-list__info link" href="/">
                                         <div class="project-list__thumb">
-                                            <img src="./images/neworlean-min.jpg" alt="human" width="370">
+                                            <picture>
+                                                <source srcset="./images/port2-1x.jpg  1x, 
+                                                ./images/port2-2x.jpg 2x" 
+                                                media="(min-width: 1200px)"
+                                                />
+                                                <source srcset="./images/tabport2-1x.jpg  1x, 
+                                                ./images/tabport2-2x.jpg 2x" 
+                                                media="(min-width: 768px)"
+                                                />
+                                                <source srcset="./images/mobport2-1x.jpg  1x, 
+                                                ./images/mobport2-2x.jpg 2x" 
+                                                media="(max-width: 767px)"
+                                                />
+                                                <img src="./images/mobport2-1x.jpg" alt="new-orlean">  
+                                            </picture>
                                                     <p class="project-list__thumb-caption">Technoduck is a state-of-the-art <br> coronavirus
                                                     distribution platform. <br>
                                                     Companies use this platform for <br> digital espionage
@@ -111,7 +184,21 @@
                         <li class="project-list__element">
                                     <a class="project-list__info link" href="/">
                                         <div class="project-list__thumb">
-                                            <img src="./images/seafood-min.jpg" alt="human" width="370">
+                                            <picture>
+                                                <source srcset="./images/port3-1x.jpg  1x, 
+                                                ./images/port3-2x.jpg 2x" 
+                                                media="(min-width: 1200px)"
+                                                />
+                                                <source srcset="./images/tabport3-1x.jpg  1x, 
+                                                ./images/tabport3-2x.jpg 2x" 
+                                                media="(min-width: 768px)"
+                                                />
+                                                <source srcset="./images/mobport3-1x.jpg  1x, 
+                                                ./images/mobport3-2x.jpg 2x" 
+                                                media="(max-width: 767px)"
+                                                />
+                                                <img src="./images/mobport3-1x.jpg" alt="seafood">  
+                                            </picture>
                                                     <p class="project-list__thumb-caption">Technoduck is a state-of-the-art <br> coronavirus
                                                     distribution platform. <br>
                                                     Companies use this platform for <br> digital espionage
@@ -119,7 +206,7 @@
                                         </div>
                                         <div class="project-list__box">
                                             <h2 class="project-list__title">
-                                                Ресторан Seafood
+                                                Restaurant Seafood
                                             </h2>
                                             <p class="project-list__p">
                                                 Apps
@@ -130,8 +217,21 @@
                         <li class="project-list__element">
                                     <a class="project-list__info link" href="/">
                                         <div class="project-list__thumb">
-                                            <img src="./images/prime-min.jpg" alt="human" width="370">                               
-
+                                            <picture>
+                                                <source srcset="./images/port4-1x.jpg  1x, 
+                                                ./images/port4-2x.jpg 2x" 
+                                                media="(min-width: 1200px)"
+                                                />
+                                                <source srcset="./images/tabport4-1x.jpg  1x, 
+                                                ./images/tabport4-2x.jpg 2x" 
+                                                media="(min-width: 768px)"
+                                                />
+                                                <source srcset="./images/mobport4-1x.jpg  1x, 
+                                                ./images/mobport4-2x.jpg 2x" 
+                                                media="(max-width: 767px)"
+                                                />
+                                                <img src="./images/mobport4-1x.jpg" alt="prime">  
+                                            </picture>
                                                                 <p class="project-list__thumb-caption">Technoduck is a state-of-the-art <br> coronavirus
                                                                 distribution platform. <br>
                                                                 Companies use this platform for <br> digital espionage
@@ -151,9 +251,21 @@
                         <li class="project-list__element">
                                     <a class="project-list__info link" href="/">
                                         <div class="project-list__thumb">
-                                            <img src="./images/boxes-min.jpg" alt="human" width="370">
-                                
-
+                                            <picture>
+                                                <source srcset="./images/port5-1x.jpg  1x, 
+                                                ./images/port5-2x.jpg 2x" 
+                                                media="(min-width: 1200px)"
+                                                />
+                                                <source srcset="./images/tabport5-1x.jpg  1x, 
+                                                ./images/tabport5-2x.jpg 2x" 
+                                                media="(min-width: 768px)"
+                                                />
+                                                <source srcset="./images/mobport5-1x.jpg  1x, 
+                                                ./images/mobport5-2x.jpg 2x" 
+                                                media="(max-width: 767px)"
+                                                />
+                                                <img src="./images/mobport5-1x.jpg" alt="boxes">  
+                                            </picture>           
                                                     <p class="project-list__thumb-caption">Technoduck is a state-of-the-art <br> coronavirus
                                                     distribution platform. <br>
                                                     Companies use this platform for <br> digital espionage
@@ -173,7 +285,21 @@
                         <li class="project-list__element">
                                     <a class="project-list__info link" href="/">
                                         <div class="project-list__thumb">
-                                            <img src="./images/inspiration-min.jpg" alt="human" width="370">
+                                            <picture>
+                                                <source srcset="./images/port6-1x.jpg  1x, 
+                                                ./images/port6-2x.jpg 2x" 
+                                                media="(min-width: 1200px)"
+                                                />
+                                                <source srcset="./images/tabport6-1x.jpg  1x, 
+                                                ./images/tabport6-2x.jpg 2x" 
+                                                media="(min-width: 768px)"
+                                                />
+                                                <source srcset="./images/mobport6-1x.jpg  1x, 
+                                                ./images/mobport6-2x.jpg 2x" 
+                                                media="(max-width: 767px)"
+                                                />
+                                                <img src="./images/mobport6-1x.jpg" alt="inspiration">  
+                                            </picture>
                                                     <p class="project-list__thumb-caption">Technoduck is a state-of-the-art <br> coronavirus
                                                     distribution platform. <br>
                                                     Companies use this platform for <br> digital espionage
@@ -192,7 +318,21 @@
                         <li class="project-list__element">
                                     <a class="project-list__info link" href="/">
                                         <div class="project-list__thumb">
-                                            <img src="./images/limited-min.jpg" alt="human" width="370">
+                                            <picture>
+                                                <source srcset="./images/port7-1x.jpg  1x, 
+                                                ./images/port7-2x.jpg 2x" 
+                                                media="(min-width: 1200px)"
+                                                />
+                                                <source srcset="./images/tabport7-1x.jpg  1x, 
+                                                ./images/tabport7-2x.jpg 2x" 
+                                                media="(min-width: 768px)"
+                                                />
+                                                <source srcset="./images/mobport7-1x.jpg  1x, 
+                                                ./images/mobport7-2x.jpg 2x" 
+                                                media="(max-width: 767px)"
+                                                />
+                                                <img src="./images/mobport7-1x.jpg" alt="limited">  
+                                            </picture>
                                             <p class="project-list__thumb-caption">Technoduck is a state-of-the-art <br> coronavirus
                                             distribution platform. <br>
                                             Companies use this platform for <br> digital espionage
@@ -211,7 +351,21 @@
                         <li class="project-list__element">
                                     <a class="project-list__info link" href="/">
                                         <div class="project-list__thumb">
-                                            <img src="./images/LAB-min.jpg" alt="human" width="370">
+                                            <picture>
+                                                <source srcset="./images/port8-1x.jpg  1x, 
+                                                ./images/port8-2x.jpg 2x" 
+                                                media="(min-width: 1200px)"
+                                                />
+                                                <source srcset="./images/tabport8-1x.jpg  1x, 
+                                                ./images/tabport8-2x.jpg 2x" 
+                                                media="(min-width: 768px)"
+                                                />
+                                                <source srcset="./images/mobport8-1x.jpg  1x, 
+                                                ./images/mobport8-2x.jpg 2x" 
+                                                media="(max-width: 767px)"
+                                                />
+                                                <img src="./images/mobport8-1x.jpg" alt="lab">  
+                                            </picture>
                                             <p class="project-list__thumb-caption">Technoduck is a state-of-the-art <br> coronavirus
                                             distribution platform. <br>
                                             Companies use this platform for <br> digital espionage
@@ -230,7 +384,21 @@
                         <li class="project-list__element">
                                     <a class="project-list__info link" href="/">
                                         <div class="project-list__thumb">
-                                            <img src="./images/business-min.jpg" alt="human" width="370">
+                                            <picture>
+                                                <source srcset="./images/port9-1x.jpg  1x, 
+                                                ./images/port9-2x.jpg 2x" 
+                                                media="(min-width: 1200px)"
+                                                />
+                                                <source srcset="./images/tabport9-1x.jpg  1x, 
+                                                ./images/tabport9-2x.jpg 2x" 
+                                                media="(min-width: 768px)"
+                                                />
+                                                <source srcset="./images/mobport9-1x.jpg  1x, 
+                                                ./images/mobport9-2x.jpg 2x" 
+                                                media="(max-width: 767px)"
+                                                />
+                                                <img src="./images/mobport9-1x.jpg" alt="business">  
+                                            </picture>
                                             <p class="project-list__thumb-caption">Technoduck is a state-of-the-art <br> coronavirus
                                             distribution platform. <br>
                                             Companies use this platform for <br> digital espionage
@@ -255,67 +423,73 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer-claster">
-                    <div class="footer-claster__info">
-                        <a href="/" class="footer-claster__logo">
-                            Web<span class="footer-claster__logo-accent">Studio</span>
-                        </a>
-                        <address class="adress">
-                            <ul class="adress__list">
-                                <li>
-                                    <a class="adress__location"
-                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fbit.ly%2F3pXMvUd" target="_blank"
-                                        rel="noopener noreferrer">695 Park Ave, New York, NY 10065, United States</a>
+                    <div class="footer-claster__connect">
+                        <div class="footer-claster__info">
+                            <a href="/" class="footer-claster__logo">
+                                Web<span class="footer-claster__logo-accent">Studio</span>
+                            </a>
+                            <address class="adress">
+                                <ul class="adress__list">
+                                    <li>
+                                        <a class="adress__location"
+                                            href="https://www.figma.com/exit?url=https%3A%2F%2Fbit.ly%2F3pXMvUd" target="_blank"
+                                            rel="noopener noreferrer">695 Park Ave, New York, NY 10065, United States</a>
+                                    </li>
+                                    <li>
+                                        <a class="adress__email" href="info@example.com">info@example.com</a>
+                                    </li>
+                                    <li>
+                                        <a class="adress__phone" href="380991111111">+38 099 111 11 11</a>
+                                    </li>
+                                </ul>
+                            </address>
+                        </div>
+                        <div class="footer-box">
+                            <p class="footer-box__title">
+                                Find us on
+                            </p>
+                            <ul class="footer-list list">
+                                <li class="footer-list__element">
+                                    <a class="footer-list__link" href="/">
+                                        <svg class="footer-list__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#instagram"></use>
+                                        </svg>
+                                    </a>
                                 </li>
-                                <li>
-                                    <a class="adress__email" href="info@example.com">info@example.com</a>
+                                <li class="footer-list__element">
+                                    <a class="footer-list__link" href="/">
+                                        <svg class="footer-list__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#twitter"></use>
+                                        </svg>
+                                    </a>
                                 </li>
-                                <li>
-                                    <a class="adress__phone" href="380991111111">+38 099 111 11 11</a>
+                                <li class="footer-list__element">
+                                    <a class="footer-list__link" href="/">
+                                        <svg class="footer-list__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="footer-list__element">
+                                    <a class="footer-list__link" href="/">
+                                        <svg class="footer-list__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
                                 </li>
                             </ul>
-                        </address>
+                        </div>
                     </div>
-                    <div class="footer-box">
-                        <p class="footer-box__title">
-                            Find us on
-                        </p>
-                        <ul class="footer-list list">
-                            <li class="footer-list__element">
-                                <a class="footer-list__link" href="/">
-                                    <svg class="footer-list__icon" width="20" height="20">
-                                        <use href="./images/icons.svg#instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="footer-list__element">
-                                <a class="footer-list__link" href="/">
-                                    <svg class="footer-list__icon" width="20" height="20">
-                                        <use href="./images/icons.svg#twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="footer-list__element">
-                                <a class="footer-list__link" href="/">
-                                    <svg class="footer-list__icon" width="20" height="20">
-                                        <use href="./images/icons.svg#facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="footer-list__element">
-                                <a class="footer-list__link" href="/">
-                                    <svg class="footer-list__icon" width="20" height="20">
-                                        <use href="./images/icons.svg#linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-box">
-                        <p class="footer-box__input-title" for="footer-email">Subscribe to our newsletter</label>
+                    <div class="footer-form">
+                        <p class="footer-form__input-title" for="footer-email">Subscribe to our newsletter</label>
         
-                        <form class="footer-box__form">
-                            <input class="footer-box__input-email" id="footer-email" type="email" name="email" placeholder="E-mail">
-                            <button class="footer-box__button" type="submit">Subscribe</button>
+                        <form class="footer-form__form">
+                            <div class="footer-form__input-wrap">
+                            <input class="footer-form__input-email" id="footer-email" type="email" name="email" placeholder="E-mail">
+                            </div>
+                            <div class="footer-form__button-wrap">
+                            <button class="footer-form__button" type="submit">Subscribe</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -325,6 +499,7 @@
         <script>
             console.log(document.querySelector(".page-header").getBoundingClientRect().height);
         </script>
+        <script src="./js/menu.js"></script>
 </body>
 
 </html>

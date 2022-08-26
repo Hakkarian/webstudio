@@ -39,9 +39,13 @@
     }
 }
 
-.modal__form-text:not(:focus):not(:placeholder-shown):valid {}
+.modal__form-text:not(:focus):not(:placeholder-shown):valid {
+    background-color: rgba(10, 255, 112, 0.521);
+}
 
-.modal__form-text:not(:focus):not(:placeholder-shown):invalid {}
+.modal__form-text:not(:focus):not(:placeholder-shown):invalid {
+    background-color: rgba(255, 0, 0, 0.521);
+}
 
 .modal__input-icon {
     position: absolute;
@@ -83,11 +87,16 @@
 
     &::placeholder {
         font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 14px;
+        line-height: 1.14;
         letter-spacing: 0.01em;
 
         color: rgba(117, 117, 117, 0.5);
+
+        @media screen and (max-width: 1199px) {
+            font-size: 12px;
+            line-height: 1.16;
+        }
     }
 }
 
@@ -115,6 +124,12 @@
     letter-spacing: 0.03em;
 
     color: $portfolio-project-list__p;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: 1.16;
+        padding-left: 1.6em;
+    }
 }
 
 .modal__checkbox {
@@ -140,6 +155,9 @@
         background-image: url(../images/check-on.svg);
         background-repeat: no-repeat;
         background-size: contain;
+    }
+    @media screen and (max-width: 1199px) {
+        margin-left: -1.6em;
     }
 }
 

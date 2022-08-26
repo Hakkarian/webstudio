@@ -1,11 +1,12 @@
 @import './utils/vars';
-@import './utils/placeholders';
 @import './utils/mixins';
+@import './utils/placeholders';
 @import './base/normalize';
 @import './components/essentials';
 @import './components/page-header/page-header';
 @import './components/page-header/logo';
 @import './components/page-header/page-nav';
+@import './components/page-header/navigation';
 @import './components/page-header/header-contacts';
 @import './components/hero/hero';
 @import './components/features/features';

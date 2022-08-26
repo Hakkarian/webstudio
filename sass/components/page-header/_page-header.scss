@@ -6,4 +6,11 @@
     width: 100%;
     background-color: $hero__button;
     border: 1px solid #ECECEC;
+
+    @include tablet {
+        min-height: 80px;
+    }
+    @include desktop {
+        min-height: 80px;
+    }
 }

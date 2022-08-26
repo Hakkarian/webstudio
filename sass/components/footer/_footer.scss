@@ -1,0 +1,35 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: #2F303A;
+    ;
+    color: $hero__button;
+}
+
+.footer-claster {
+
+    @include desktop {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+}
+.footer-claster__connect {
+
+
+    @media screen and (max-width: 767px) {
+        display: block;
+    }    
+
+    @media screen and (min-width: 767px) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+}
+.footer-claster__info {
+    @include desktop {
+
+    }
+}

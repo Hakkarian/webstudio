@@ -5,11 +5,16 @@
 
     background-color: $hero__button;
     
-    .features-list__element:not(:last-child) {
+    @media screen and (max-width: 479px) {
+        .features-list__element:not(:last-child) {
         margin-bottom: 30px;
     }
+  }
+    @include tablet {
+      margin-bottom: 0;
+    }
 
-    @media screen and (min-width: 1140px) {
+    @include desktop {
         padding-top: 94px;
         padding-bottom: 94px;
 
@@ -22,19 +27,26 @@
 .features-list {
     position: relative;
 
-    @media screen and (min-width: 1140px) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    list-style: none;
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    @include desktop {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
     }
   }
   
   .features-list__element {
     width: 100%;
+    @include tablet {
+      width: calc((100% - 2 * 15px) / 2);
+    }
+    @include desktop {
+      width: calc((100% - 6 * 15px) / 4);
   }
   
   .features-list__features-box {
@@ -56,11 +68,12 @@
   }
   
   .features .features-list__element:last-child {
+    @media screen and (max-width: 479px) {
     margin-right: 0;
+    }
   }
   
   .title-box__title {
-    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -68,8 +81,8 @@
     margin-top: 0px;
     margin-bottom: 10px;
     
-    @media screen and (min-width: 1140px) {
-        text-align: none;
+    @media screen and (max-width: 1199px) {
+      text-align: center;
     }
   }
   
@@ -83,3 +96,4 @@
         margin-bottom: 30px;
     }
   }
+}

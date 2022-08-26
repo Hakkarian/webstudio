@@ -25,33 +25,80 @@
 
 
     <header class="page-header">
-        <div class="container page-nav">
-            <nav class="page-nav">
-                <a href="/" class="logo">
-                    Web<span class="logo__accent">Studio</span>
-                </a>
-        
-                <ul class="page__list">
-                    <li class="page__element"><a class="page__link current" href="./index.html">Studio</a></li>
-                    <li class="page__element"><a class="page__link" href="./portfolio.html">Portfolio</a></li>
-                    <li class="page__element"><a class="page__link" href="/">Contacts</a></li>
-                </ul>
-        
-            </nav>
-                <ul class="contacts">
-                    <li class="contacts__element">
-                        <a class="contacts__email" href="info@devstudio.com">
-                            <svg class="contacts__email-icon" width="16" height="12">
-                                <use href="./images/icons.svg#envelope-normal"></use>
-                            </svg> info@devstudio.com</a>
-                    </li>
-                    <li class="contacts__element"><a class="contacts__phone" href="380961111111"> 
-                        <svg class="contacts__email-icon" width="10" height="16">
-                            <use class="contacts__phone-icon" href="./images/icons.svg#vector"></use>
-                        </svg> 38 096 111 11 11</a>
-                    </li>
-        
-                </ul>
+        <div class="container page-nav">  
+                <nav class="page-nav">
+                    <a href="/" class="logo">
+                        Web<span class="logo__accent">Studio</span>
+                    </a>  
+                    <ul class="page__list">
+                        <li class="page__element"><a class="page__link current" href="./index.html">Studio</a></li>
+                        <li class="page__element"><a class="page__link" href="./portfolio.html">Portfolio</a></li>
+                        <li class="page__element"><a class="page__link" href="/">Contacts</a></li>
+                    </ul>
+                </nav>
+                    <ul class="contacts">
+                        <li class="contacts__element">
+                            <a class="contacts__email" href="mailto:info@devstudio.com">
+                                <svg class="contacts__email-icon" width="16" height="12">
+                                    <use href="./images/icons.svg#envelope-normal"></use>
+                                </svg> info@devstudio.com</a>
+                        </li>
+                        <li class="contacts__element">
+                            <a class="contacts__phone" href="tel:380961111111"> 
+                            <svg class="contacts__email-icon" width="10" height="16">
+                                <use class="contacts__phone-icon" href="./images/icons.svg#vector"></use>
+                            </svg> 38 096 111 11 11</a>
+                        </li>
+                    </ul>
+            <button type="button" class="menu-open">
+                <svg class="nav-menu__icon" width="40" height="40" aria-label="mobile menu switcher">
+                    <use class="icon-menu" href="./images/icons.svg#nav-menu"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="nav-menu is-hidden">
+            <div class="container">
+                <div class="nav-menu__top">
+                <button type="button" class="menu-close">    
+                <svg class="nav-menu__icon" width="40" height="40" aria-label="mobile menu switcher">
+                    <use class="icon-cross" href="./images/icons.svg#nav-close"></use>
+                </svg>
+                </button>
+                <nav class="menu__page-nav">
+                    <ul class="nav-menu-list">
+                        <li class="nav-menu-element"><a class="nav-menu__link mob-current" href="./index.html">Studio</a></li>
+                        <li class="nav-menu-element"><a class="nav-menu__link" href="./portfolio.html">Portfolio</a></li>
+                        <li class="nav-menu-element"><a class="nav-menu__link" href="/">Contacts</a></li>
+                    </ul>
+                </nav>
+                </div>
+                <div class="nav-menu__bottom">
+                    <ul class="bottom-contacts">
+                        <li class="bottom-contacts__element">
+                            <a class="bottom-contacts__phone" href="tel:380961111111"> 
+                            <svg class="bottom-contacts__email-icon" width="10" height="16">
+                                <use class="bottom-contacts__phone-icon" href="./images/icons.svg#vector"></use>
+                            </svg> 38 096 111 11 11</a>
+                        </li>
+                        <li class="bottom-contacts__element">
+                            <a class="bottom-contacts__email" href="mailto:info@devstudio.com">
+                                <svg class="bottom-contacts__email-icon" width="16" height="12">
+                                    <use href="./images/icons.svg#envelope-normal"></use>
+                                </svg> info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="menu-networks-list">
+                        <li class="menu-networks-element">
+                            <a class="menu-networks-link" href="/">Instagram</a></li>
+                        <li class="menu-networks-element">
+                            <a class="menu-networks-link" href="/">Twitter</a></li>
+                        <li class="menu-networks-element">
+                            <a class="menu-networks-link" href="/">Facebook</a></li>
+                        <li class="menu-networks-element">
+                            <a class="menu-networks-link" href="/">Linkedin</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -127,7 +174,16 @@
                         <li class="section-list__element">
                             <div class="section-list__thumb">
                                 <a class="section-list__thumb-img" href="">
-                                    <img class="section-list__thumb-img" src="images/1left.jpg" alt="ноутбук" width="370">
+                                    <picture>
+                                        <source srcset="./images/section1-1x.jpg  1x, 
+                                        ./images/section1-2x.jpg 2x" 
+                                        media="(min-width: 1200px)"
+                                        />
+                                        </picture>
+                                    <img class="section-list__thumb-img" src="images/1left.jpg" 
+                                    srcset="./images/section1-1x.jpg  1x, 
+                                    ./images/section1-2x.jpg 2x"
+                                    alt="ноутбук" width="370">
                                     <div class="section-list__thumb-color">
                                         <div class="section-list__thumb-actions">
                                             <p class="section-list__thumb-p">Desktop apps</p>
@@ -139,7 +195,16 @@
                         <li class="section-list__element">
                             <div class="section-list__thumb">
                                 <a class="section-list__thumb-img" href="">
-                                    <img class="section-list__thumb-img" src="images/phone.jpg" alt="телефон" width="370">
+                                    <picture>
+                                        <source srcset="./images/section2-1x.jpg  1x, 
+                                        ./images/section2-2x.jpg 2x" 
+                                        media="(min-width: 1200px)"
+                                        />
+                                        </picture>
+                                    <img class="section-list__thumb-img" src="images/phone.jpg" 
+                                    srcset="./images/section2-1x.jpg  1x, 
+                                    ./images/section2-2x.jpg 2x"
+                                    alt="телефон" width="370">
                                         <div class="section-list__thumb-actions">
                                             
                                             <p class="section-list__thumb-p">Mobile apps</p>
@@ -150,7 +215,16 @@
                         <li class="section-list__element">
                             <div class="section-list__thumb">
                                 <a class="section-list__thumb-img" href="">
-                                    <img class="section-list__thumb-img" src="images/notepad.jpg" alt="планшет" width="370">
+                                    <picture>
+                                        <source srcset="./images/section3-1x.jpg  1x, 
+                                        ./images/section3-2x.jpg 2x" 
+                                        media="(min-width: 1200px)"
+                                        />
+                                        </picture>
+                                    <img class="section-list__thumb-img" src="images/notepad.jpg" 
+                                    srcset="./images/section3-1x.jpg  1x, 
+                                    ./images/section3-2x.jpg 2x"
+                                    alt="планшет" width="370">
                                         <div class="section-list__thumb-actions">
                                             <p class="section-list__thumb-p">Design solutions</p>
                                         </div>
@@ -168,7 +242,22 @@
                         <li class="command-list__element">
                             <a class="command-list__link" href="">
                                 <div class="command-list__frame">
-                                    <img class="command-list__frame-img" src="images/person1.jpg" alt="Игор Демьяненко" width="270" />
+                                    <picture>
+                                    <source srcset="./images/command1-1x.jpg  1x, 
+                                    ./images/command1-2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                    />
+                                    <source srcset="./images/tabcommand1-1x.jpg  1x, 
+                                    ./images/tabcommand2x.jpg 2x" 
+                                    media="(min-width: 768px)"
+                                    />
+                                    <source srcset="./images/mobcommand1-1x.jpg  1x, 
+                                    ./images/mobcommand1-2x.jpg 2x" 
+                                    media="(max-width: 767px)"
+                                    />
+                                    <img class="command-list__frame-img"
+                                    src="./images/mobcommand1-1x.jpg" alt="Игор Демьяненко"/>
+                                    </picture>
                                     <div class="command-list__frame-box">
                                         <h3 class="command-list__frame-worker">Christophet Walker</h3>
                                         <p class="command-list__frame-p">Product designer</p>
@@ -209,7 +298,23 @@
                         <li class="command-list__element">
                             <a class="command-list__link" href="">
                                 <div class="command-list__frame">
-                                    <img class="command-list__frame-img" src="images/person2.jpg" alt="Ольга Репина" width="270" />
+                                    <picture>
+                                        <source srcset="./images/command2-1x.jpg  1x, 
+                                        ./images/command2-2x.jpg 2x" 
+                                        media="(min-width: 1200px)"
+                                        />
+                                        <source srcset="./images/tabcommand2-1x.jpg  1x, 
+                                        ./images/tabcommand2-2x.jpg 2x" 
+                                        media="(min-width: 768px)"
+                                        />
+                                        <source srcset="./images/mobcommand2-1x.jpg  1x, 
+                                        ./images/mobcommand2-2x.jpg 2x" 
+                                        media="(max-width: 767px)"
+                                        />
+                                        <img class="command-list__frame-img" 
+                                    src="./images/person2.jpg" 
+                                    alt="Ольга Репина"/>
+                                        </picture>
                                     <div class="command-list__frame-box">
                                         <h3 class="command-list__frame-worker">Kylie Evans</h3>
                                         <p class="command-list__frame-p">Frontend developer</p>
@@ -250,7 +355,22 @@
                         <li class="command-list__element">
                             <a class="command-list__link" href="">
                                 <div class="command-list__frame">
-                                    <img class="command-list__frame-img" src="images/person3.jpg" alt="Николай Тарасов" width="270" />
+                                    <picture>
+                                        <source srcset="./images/command3-1x.jpg  1x, 
+                                        ./images/command3-2x.jpg 2x" 
+                                        media="(min-width: 1200px)"
+                                        >
+                                        <source srcset="./images/tabcommand3-1x.jpg  1x, 
+                                        ./images/tabcommand3-2x.jpg 2x" 
+                                        media="(min-width: 768px)"
+                                        >
+                                        <source srcset="./images/mobcommand3-1x.jpg  1x, 
+                                        ./images/mobcommand3-2x.jpg 2x" 
+                                        media="(max-width: 767px)"
+                                        >
+                                        <img class="command-list__frame-img" src="images/person3.jpg" 
+                                        alt="Николай Тарасов"/>
+                                        </picture>
                                     <div class="command-list__frame-box">
                                         <h3 class="command-list__frame-worker">Ryan Harris</h3>
                                         <p class="command-list__frame-p">Marketing</p>
@@ -291,7 +411,22 @@
                         <li class="command-list__element">
                             <a class="command-list__link" href="">
                                 <div class="command-list__frame">
-                                    <img class="command-list__frame-img" src="images/person4.jpg" alt="Михаил Ермаков" width="270" />
+                                    <picture>
+                                        <source srcset="./images/command4-1x.jpg  1x, 
+                                        ./images/command4-2x.jpg 2x" 
+                                        media="(min-width: 1200px)"
+                                        />
+                                        <source srcset="./images/tabcommand4-1x.jpg  1x, 
+                                        ./images/tabcommand4-2x.jpg 2x" 
+                                        media="(min-width: 768px)"
+                                        />
+                                        <source srcset="./images/mobcommand4-1x.jpg  1x, 
+                                        ./images/mobcommand4-2x.jpg 2x" 
+                                        media="(max-width: 767px)"
+                                        />
+                                        <img class="command-list__frame-img" src="images/person4.jpg" 
+                                        alt="Михаил Ермаков"/>
+                                        </picture>
                                     <div class="command-list__frame-box">
                                         <h3 class="command-list__frame-worker">Tyler Moore</h3>
                                         <p class="command-list__frame-p">UI designer</p>
@@ -334,53 +469,55 @@
             </div>
         </section>
         <section class="clients">
-            <h2 class="clients__title" data-aos="fade-up">
-                Regular customers
-            </h2>
-            <ul class="clients-list">
-                <li class="clients-list__element">
-                    <a class="clients-list__link" href="/">
-                        <svg class="clients-list__icon" width="106" height="60">
-                            <use href="./images/icons.svg#acompany"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="clients-list__element">
-                    <a class="clients-list__link" href="/">
-                        <svg class="clients-list__icon" width="106" height="60">
-                            <use href="./images/icons.svg#bcompany"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="clients-list__element">
-                    <a class="clients-list__link" href="/">
-                        <svg class="clients-list__icon" width="106" height="60">
-                            <use href="./images/icons.svg#ccompany"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="clients-list__element">
-                    <a class="clients-list__link" href="/">
-                        <svg class="clients-list__icon" width="106" height="60">
-                            <use href="./images/icons.svg#dcompany"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="clients-list__element">
-                    <a class="clients-list__link" href="/">
-                        <svg class="clients-list__icon" width="106" height="60">
-                            <use href="./images/icons.svg#ecompany"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="clients-list__element">
-                    <a class="clients-list__link" href="/">
-                        <svg class="clients-list__icon" width="106" height="60">
-                            <use href="./images/icons.svg#gcompany"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+            <div class="container">
+                <h2 class="clients__title" data-aos="fade-up">
+                    Regular customers
+                </h2>
+                <ul class="clients-list">
+                    <li class="clients-list__element">
+                        <a class="clients-list__link" href="/">
+                            <svg class="clients-list__icon" width="106" height="60">
+                                <use href="./images/icons.svg#acompany"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients-list__element">
+                        <a class="clients-list__link" href="/">
+                            <svg class="clients-list__icon" width="106" height="60">
+                                <use href="./images/icons.svg#bcompany"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients-list__element">
+                        <a class="clients-list__link" href="/">
+                            <svg class="clients-list__icon" width="106" height="60">
+                                <use href="./images/icons.svg#ccompany"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients-list__element">
+                        <a class="clients-list__link" href="/">
+                            <svg class="clients-list__icon" width="106" height="60">
+                                <use href="./images/icons.svg#dcompany"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients-list__element">
+                        <a class="clients-list__link" href="/">
+                            <svg class="clients-list__icon" width="106" height="60">
+                                <use href="./images/icons.svg#ecompany"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients-list__element">
+                        <a class="clients-list__link" href="/">
+                            <svg class="clients-list__icon" width="106" height="60">
+                                <use href="./images/icons.svg#gcompany"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 
@@ -388,66 +525,72 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-claster">
-                <div class="footer-claster__info">
-                    <a href="/" class="footer-claster__logo">
-                        Web<span class="footer-claster__logo-accent">Studio</span>
-                    </a>
-                    <address class="adress">
-                        <ul class="adress__list">
-                            <li>
-                                <a class="adress__location" href="https://www.figma.com/exit?url=https%3A%2F%2Fbit.ly%2F3pXMvUd"
-                                target="_blank" rel="noopener noreferrer">695 Park Ave, New York, NY 10065, United States</a>
-                            </li>
-                            <li>
-                                <a class="adress__email" href="info@example.com">info@example.com</a>
-                            </li>
-                            <li>
-                                <a class="adress__phone" href="380991111111">+38 099 111 11 11</a>
-                            </li>
-                        </ul>
-                    </address>
+                <div class="footer-claster__connect">
+                    <div class="footer-claster__info">
+                        <a href="/" class="footer-claster__logo">
+                            Web<span class="footer-claster__logo-accent">Studio</span>
+                        </a>
+                        <address class="adress">
+                            <ul class="adress__list">
+                                <li>
+                                    <a class="adress__location" href="https://www.figma.com/exit?url=https%3A%2F%2Fbit.ly%2F3pXMvUd"
+                                    target="_blank" rel="noopener noreferrer">695 Park Ave, New York, NY 10065, United States</a>
+                                </li>
+                                <li>
+                                    <a class="adress__email" href="info@example.com">info@example.com</a>
+                                </li>
+                                <li>
+                                    <a class="adress__phone" href="380991111111">+38 099 111 11 11</a>
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                    <div class="footer-box">
+                        <p class="footer-box__title">
+                            Find us on
+                        </p>
+                            <ul class="footer-list list">
+                                <li class="footer-list__element">
+                                    <a class="footer-list__link" href="/">
+                                        <svg class="footer-list__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="footer-list__element">
+                                    <a class="footer-list__link" href="/">
+                                        <svg class="footer-list__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="footer-list__element">
+                                    <a class="footer-list__link" href="/">
+                                        <svg class="footer-list__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="footer-list__element">
+                                    <a class="footer-list__link" href="/">
+                                        <svg class="footer-list__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
                 </div>
-                <div class="footer-box">
-                    <p class="footer-box__title">
-                        Find us on
-                    </p>
-                        <ul class="footer-list list">
-                            <li class="footer-list__element">
-                                <a class="footer-list__link" href="/">
-                                    <svg class="footer-list__icon" width="20" height="20">
-                                        <use href="./images/icons.svg#instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="footer-list__element">
-                                <a class="footer-list__link" href="/">
-                                    <svg class="footer-list__icon" width="20" height="20">
-                                        <use href="./images/icons.svg#twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="footer-list__element">
-                                <a class="footer-list__link" href="/">
-                                    <svg class="footer-list__icon" width="20" height="20">
-                                        <use href="./images/icons.svg#facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="footer-list__element">
-                                <a class="footer-list__link" href="/">
-                                    <svg class="footer-list__icon" width="20" height="20">
-                                        <use href="./images/icons.svg#linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                </div>
-                <div class="footer-box">
-                            <p class="footer-box__input-title" for="footer-email">Subscribe to our newsletter</label>
+                <div class="footer-form">
+                            <p class="footer-form__input-title" for="footer-email">Subscribe to our newsletter</label>
                             
-                            <form class="footer-box__form">
-                            <input class="footer-box__input-email" id="footer-email" type="email" name="email" placeholder="E-mail">                    
-                            <button class="footer-box__button" type="submit">Subscribe</button>
+                            <form class="footer-form__form">
+                                <div class="footer-form__input-wrap">
+                                <input class="footer-form__input-email" id="footer-email" type="email" name="email" placeholder="E-mail">                    
+                                </div>
+                                <div class="footer-form__button-wrap">
+                                    <button class="footer-form__button" type="submit">Subscribe</button>
+                                </div>
                             </form>
                 </div>
             </div>
@@ -510,8 +653,7 @@
     
         </div>
     </div>
-    </div>
-           
+    </div>    
     <script>
     (() => {
         const refs = {
@@ -536,5 +678,6 @@
     <script>
         AOS.init();
     </script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

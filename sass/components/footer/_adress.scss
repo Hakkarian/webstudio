@@ -1,0 +1,61 @@
+.footer-claster__info {
+    margin-bottom: 60px;
+}
+
+.adress__location {
+    display: block;
+    margin-bottom: 8px;
+
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    
+    color: $hero__button;
+
+    @media screen and (min-width: 1140px) {
+        margin-bottom: 9px;
+    }
+
+}
+
+.adress__email {
+    display: block;
+    margin-bottom: 8px;
+
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: $primary-text-color;
+    
+    transition: color 250ms $cubic-bezier;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+
+    @media screen and (min-width: 1140px) {
+        margin-bottom: 9px;
+    }
+}
+
+.adress__phone {
+    display: block;
+
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: $primary-text-color;
+
+    transition: color 250ms $cubic-bezier;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
