@@ -678,33 +678,21 @@ img {
   color: #2196F3;
 }
 
-.bottom-contacts__phone-icon {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  fill: currentColor;
-}
-
 .bottom-contacts__element {
   margin-top: 32px;
 }
 
 .bottom-contacts__email {
-  line-height: 1.14;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
   color: #757575;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .bottom-contacts__email:hover, .bottom-contacts__email:focus {
   color: #2196F3;
-}
-
-.bottom-contacts__email-icon {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  fill: currentColor;
-  margin-right: 5px;
 }
 
 .menu-networks-list {
@@ -768,21 +756,6 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;
   }
-  .contacts__email::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 4px;
-    background-color: #2196F3;
-    border-radius: 2px;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
   .contacts__email:hover::after, .contacts__email:focus::after {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
@@ -811,21 +784,6 @@ img {
     margin-left: 50px;
     padding-top: 32px;
     padding-bottom: 32px;
-  }
-  .contacts__phone::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 4px;
-    background-color: #2196F3;
-    border-radius: 2px;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .contacts__phone:hover::after, .contacts__phone:focus::after {
     -webkit-transform: scaleX(1);
@@ -894,23 +852,17 @@ img {
 
 .hero__title {
   font-weight: 900;
-  font-size: 26px;
-  line-height: 1.61;
+  font-size: 44px;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .hero__title {
-    font-size: 44px;
-    line-height: 1.36;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero__title {
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
   }
 }
 
@@ -1303,16 +1255,16 @@ img {
   margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
 @media screen and (min-width: 1200px) {
   .clients__title {
     margin-bottom: 50px;
-    font-size: 28px;
-    line-height: 1.17;
+    font-size: 36px;
+    line-height: 1.16;
   }
 }
 
@@ -1406,7 +1358,6 @@ img {
 
 .footer {
   padding-top: 60px;
-  padding-bottom: 60px;
   background-color: #2F303A;
   color: #ffffff;
 }
@@ -1446,16 +1397,18 @@ img {
 .footer-claster__logo {
   display: block;
   margin-bottom: 20px;
-  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
   color: #2196F3;
 }
-@media screen and (min-width: 1140px) {
+@media screen and (max-width: 1199px) {
   .footer-claster__logo {
-    font-size: 26px;
+    text-align: center;
+    font-size: 24px;
     line-height: 1.19;
   }
 }
@@ -1481,23 +1434,22 @@ img {
 
 .adress__location {
   display: block;
-  margin-bottom: 8px;
-  text-align: center;
+  margin-bottom: 9px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: #ffffff;
 }
-@media screen and (min-width: 1140px) {
+@media screen and (max-width: 1199px) {
   .adress__location {
-    margin-bottom: 9px;
+    text-align: center;
+    margin-bottom: 8px;
   }
 }
 
 .adress__email {
   display: block;
-  margin-bottom: 8px;
-  text-align: center;
+  margin-bottom: 9px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -1508,15 +1460,15 @@ img {
 .adress__email:hover, .adress__email:focus {
   color: #2196F3;
 }
-@media screen and (min-width: 1140px) {
+@media screen and (max-width: 1199px) {
   .adress__email {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    text-align: center;
   }
 }
 
 .adress__phone {
   display: block;
-  text-align: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -1526,6 +1478,11 @@ img {
 }
 .adress__phone:hover, .adress__phone:focus {
   color: #2196F3;
+}
+@media screen and (max-width: 1199px) {
+  .adress__phone {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -1551,12 +1508,16 @@ img {
 
 .footer-box__title {
   margin-bottom: 20px;
-  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+@media screen and (max-width: 1199px) {
+  .footer-box__title {
+    text-align: center;
+  }
 }
 
 .footer-list {
@@ -1617,7 +1578,6 @@ img {
 @media screen and (max-width: 767px) {
   .footer-form {
     display: block;
-    margin-bottom: 60px;
   }
 }
 

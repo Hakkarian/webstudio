@@ -2,17 +2,19 @@
     display: block;
     margin-bottom: 20px;
 
-    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 26px;
     line-height: 1.19;
 
     text-decoration: none;
     color: $accent-color;
     
-    @media screen and (min-width: 1140px) {
-    font-size: 26px;
-    line-height: 1.19;
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+        font-size: 24px;
+        line-height: 1.19;
     }
 }
 

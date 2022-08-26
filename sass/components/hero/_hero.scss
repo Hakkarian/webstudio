@@ -40,20 +40,16 @@
 }
 .hero__title {
     font-weight: 900;
-    font-size: 26px;
-    line-height: 1.61;
+    font-size: 44px;
+      line-height: 1.36;
     letter-spacing: 0.06em;
     color: #ffffff;
     text-transform: uppercase;
     margin-bottom: 30px;
 
-    @include tablet {
-        font-size: 44px;
-        line-height: 1.36;
-    }
-    @include desktop {
-        font-size: 44px;
-        line-height: 1.36;
+    @media screen and (max-width: 1199px) {
+      font-size: 26px;
+      line-height: 1.61;
     }
   }
   

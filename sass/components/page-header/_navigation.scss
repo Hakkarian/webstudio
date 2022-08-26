@@ -125,17 +125,16 @@
 }
 
 
-.bottom-contacts__phone-icon {
-    align-items: center;
-    fill: currentColor;
 
-}
 .bottom-contacts__element {
     margin-top: 32px;
 }
 .bottom-contacts__email {
 
-    line-height: 1.14;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
     color: $portfolio-project-list__p;
     transition: color 250ms $cubic-bezier;
 
@@ -145,12 +144,7 @@
     }
 }
 
-.bottom-contacts__email-icon {
-    align-items: center;
-    fill: currentColor;
-    margin-right: 5px;
 
-}
 .menu-networks-list {
     display: flex;
     margin-top: 64px;
