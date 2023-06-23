@@ -1,5 +1,5 @@
 # WebStudio
-A responsive website, created with HTML5, CSS3 and JS.
+A responsive two-page application, created with HTML5, CSS3 and JS.
 
 ## Table of Contents
 
@@ -19,4 +19,5 @@ A responsive website, created with HTML5, CSS3 and JS.
 Can be used as a markup template for further JS implementations. 
 
 ## Features
-One-page markup site, divided on header with navigation and contacts, hero, features, team and footer with contacts and submit form.
+Two-page markup of a site. Between pages we see header with navigation and contacts, hero, features, team and footer with contacts and submit form. One page stands out with its hero, features, team and partners section.
+Second page mainly consists of the project section.
