@@ -1,5 +1,5 @@
 # WebStudio
-A responsive website, created with HTML5 and CSS3.
+A responsive website, created with HTML5, CSS3 and JS.
 
 ## Table of Contents
 
